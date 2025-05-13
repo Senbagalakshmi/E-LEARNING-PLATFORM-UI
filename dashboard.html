@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <h2>Welcome, <span id="userName"></span></h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="progress.html">Progress</a>
+      <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+    <h3 style="text-align:center;">Add New Course</h3>
+    <div class="login-container">
+    <input type="text" id="courseTitle" placeholder="Course Title">
+    <input type="text" id="courseDesc" placeholder="Course Description">
+    <input type="text" id="courseFile" placeholder="Video File Name (e.g., html.mp4)">
+    <button onclick="addCourse()">Add Course</button>
+    </div>
+  </header>
+
+  <input type="text" id="search" placeholder="Search for courses..." />
+  <div class="course-container" id="courseList"></div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
